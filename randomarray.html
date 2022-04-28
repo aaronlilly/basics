@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Arrays</h2>
+
+<p id="demo"></p>
+<p id="demo2"></p>
+
+<script>
+const cars = [{"user":"good"},{"user":"average"},{"user":"expensive"}];
+const trucks = [{"p":"one"},{"p":"two"},{"p":"three"}];
+
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
+}
+
+let randoNum = Math.floor(Math.random() * cars.length)
+
+document.getElementById("demo").innerHTML = cars[randoNum].user;
+document.getElementById("demo2").innerHTML = trucks[randoNum].p;
+
+</script>
+
+</body>
+</html>
+
